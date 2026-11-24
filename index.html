@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RED LINE AUTO SERVICE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-blue">
+
+<header class="header">
+  <a href="#home" class="logo">RED LINE<span>AUTO SERVICE</span></a>
+  <button class="menu-toggle" id="menuToggle">☰</button>
+
+  <nav class="nav" id="nav">
+    <a href="#home">Главная</a>
+    <a href="#services">Услуги</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#about">О нас</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+
+  <div class="settings">
+    <button id="themeToggle" class="theme-toggle" type="button">Светлый режим</button>
+    <select id="languageSelect" aria-label="Язык">
+      <option value="ru">RU</option>
+      <option value="uz">UZ</option>
+      <option value="en">EN</option>
+    </select>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="eyebrow">ПРОФЕССИОНАЛЬНЫЙ АВТОСЕРВИС</span>
+      <h1>RED LINE<br><span>AUTO SERVICE</span></h1>
+      <p>Профессиональное обслуживание, диагностика и ремонт автомобилей. Качество, которому можно доверять.</p>
+      <a href="#booking" class="button">Записаться в сервис</a>
+
+      <div class="hero-stats">
+        <div><strong>10+</strong><small>Лет опыта</small></div>
+        <div><strong>5000+</strong><small>Клиентов</small></div>
+        <div><strong>24/7</strong><small>Поддержка</small></div>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2000&q=90" alt="Автомобиль">
+      <div class="photo-label">RED LINE AUTO SERVICE</div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="section-title">
+      <span>ЧТО МЫ ДЕЛАЕМ</span>
+      <h2>Наши услуги</h2>
+      <p>Нажмите на услугу, чтобы узнать подробности</p>
+    </div>
+
+    <div class="cards">
+      <details class="service-card">
+        <summary>
+          <span class="service-number">01</span>
+          <h3>Ремонт автомобилей</h3>
+          <p>Ремонт основных систем и узлов автомобиля.</p>
+          <span class="details-link">Подробнее <span>+</span></span>
+        </summary>
+        <div class="service-info">
+          <h4>Что входит в услугу</h4>
+          <p>Проверка неисправностей, поиск причины поломки, ремонт или замена повреждённых деталей.</p>
+          <p><strong>Результат:</strong> устранение выявленных неисправностей.</p>
+          <a href="#booking" class="button">Записаться на ремонт</a>
+        </div>
+      </details>
+
+      <details class="service-card">
+        <summary>
+          <span class="service-number">02</span>
+          <h3>Компьютерная диагностика</h3>
+          <p>Проверка электронных систем автомобиля.</p>
+          <span class="details-link">Подробнее <span>+</span></span>
+        </summary>
+        <div class="service-info">
+          <h4>Что входит в услугу</h4>
+          <p>Подключение диагностического оборудования, чтение ошибок электронных блоков и проверка систем.</p>
+          <p><strong>Результат:</strong> информация о найденных ошибках.</p>
+          <a href="#booking" class="button">Записаться на диагностику</a>
+        </div>
+      </details>
+
+      <details class="service-card">
+        <summary>
+          <span class="service-number">03</span>
+          <h3>Техническое обслуживание</h3>
+          <p>Плановая проверка и обслуживание автомобиля.</p>
+          <span class="details-link">Подробнее <span>+</span></span>
+        </summary>
+        <div class="service-info">
+          <h4>Что входит в услугу</h4>
+          <p>Проверка основных узлов, технических жидкостей, фильтров и состояния автомобиля.</p>
+          <p><strong>Результат:</strong> своевременное обслуживание автомобиля.</p>
+          <a href="#booking" class="button">Записаться на ТО</a>
+        </div>
+      </details>
+
+      <details class="service-card">
+        <summary>
+          <span class="service-number">04</span>
+          <h3>Шиномонтаж</h3>
+          <p>Обслуживание колёс и автомобильных шин.</p>
+          <span class="details-link">Подробнее <span>+</span></span>
+        </summary>
+        <div class="service-info">
+          <h4>Что входит в услугу</h4>
+          <p>Демонтаж и установка шин, проверка состояния колёс и балансировка.</p>
+          <p><strong>Результат:</strong> подготовленные к эксплуатации колёса.</p>
+          <a href="#booking" class="button">Записаться</a>
+        </div>
+      </details>
+
+      <details class="service-card">
+        <summary>
+          <span class="service-number">05</span>
+          <h3>Замена масла</h3>
+          <p>Замена моторного масла и фильтров.</p>
+          <span class="details-link">Подробнее <span>+</span></span>
+        </summary>
+        <div class="service-info">
+          <h4>Что входит в услугу</h4>
+          <p>Слив старого масла, установка нового фильтра и залив подходящего моторного масла.</p>
+          <p><strong>Результат:</strong> свежее масло с учётом требований производителя.</p>
+          <a href="#booking" class="button">Записаться</a>
+        </div>
+      </details>
+
+      <details class="service-card">
+        <summary>
+          <span class="service-number">06</span>
+          <h3>Ремонт подвески</h3>
+          <p>Проверка ходовой части автомобиля.</p>
+          <span class="details-link">Подробнее <span>+</span></span>
+        </summary>
+        <div class="service-info">
+          <h4>Что входит в услугу</h4>
+          <p>Осмотр амортизаторов, рычагов, сайлентблоков и других элементов подвески.</p>
+          <p><strong>Результат:</strong> выявление неисправных деталей.</p>
+          <a href="#booking" class="button">Записаться</a>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- РАБОТА АВТОСЕРВИСА -->
+  <section class="section" id="gallery">
+    <div class="section-title">
+      <span>НАША МАСТЕРСКАЯ</span>
+      <h2>Работа автосервиса</h2>
+      <p>Профессиональный ремонт и обслуживание автомобилей</p>
+    </div>
+
+    <div class="gallery">
+      <img
+        src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1000&q=85"
+        alt="Ремонт автомобиля"
+        loading="lazy"
+        onerror="this.onerror=null;this.src='https://placehold.co/1000x650/202630/ffffff?text=Auto+Repair';">
+
+      <img
+        src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=1000&q=85"
+        alt="Автомастерская"
+        loading="lazy"
+        onerror="this.onerror=null;this.src='https://placehold.co/1000x650/202630/ffffff?text=Auto+Workshop';">
+
+      <img
+        src="https://images.unsplash.com/photo-1632823471565-1ecdf5c6f4b5?auto=format&fit=crop&w=1000&q=85"
+        alt="Работа автосервиса"
+        loading="lazy"
+        onerror="this.onerror=null;this.src='https://placehold.co/1000x650/202630/ffffff?text=Service+Work';">
+    </div>
+  </section>
+
+  <section class="section about-section" id="about">
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=1200&q=85" alt="Автосервис">
+    </div>
+
+    <div class="about-text">
+      <span class="eyebrow">О НАШЕЙ КОМПАНИИ</span>
+      <h2>Ваш автомобиль в надёжных руках</h2>
+      <p>RED LINE AUTO SERVICE — автосервис для тех, кто ценит качество, профессионализм и внимательное отношение к автомобилю.</p>
+      <a href="#contacts" class="button button-outline">Связаться с нами</a>
+    </div>
+  </section>
+
+  <section class="section" id="contacts">
+    <div class="section-title">
+      <span>МЫ НА СВЯЗИ</span>
+      <h2>Контакты</h2>
+      <p>Свяжитесь с нами или найдите нас на карте</p>
+    </div>
+
+    <div class="contact-layout">
+      <div class="contact-card">
+        <h3>RED LINE AUTO SERVICE</h3>
+        <p>Москва, Россия</p>
+        <p>Телефон: +7 (495) 000-00-00</p>
+        <p>Ежедневно: 09:00–21:00</p>
+        <a class="button" href="tel:+74950000000">Позвонить</a>
+      </div>
+
+      <div class="map">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=37.57%2C55.73%2C37.68%2C55.79&layer=mapnik&marker=55.7558%2C37.6176"
+          loading="lazy"
+          title="Карта Москвы">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section booking-section" id="booking">
+    <div class="section-title">
+      <span>ОНЛАЙН-ЗАПИСЬ</span>
+      <h2>Запись в автосервис</h2>
+      <p>Оставьте заявку, и мы свяжемся с вами</p>
+    </div>
+
+    <form class="booking-form" id="bookingForm">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="tel" name="phone" placeholder="Номер телефона" required>
+      </div>
+
+      <input type="text" name="car" placeholder="Марка и модель автомобиля" required>
+
+      <select name="service" required>
+        <option value="">Выберите услугу</option>
+        <option>Ремонт автомобилей</option>
+        <option>Компьютерная диагностика</option>
+        <option>Техническое обслуживание</option>
+        <option>Шиномонтаж</option>
+        <option>Замена масла</option>
+        <option>Ремонт подвески</option>
+      </select>
+
+      <textarea name="comment" placeholder="Опишите проблему или пожелания"></textarea>
+
+      <button type="submit" class="button">Отправить заявку</button>
+      <p class="form-message" id="formMessage"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 RED LINE AUTO SERVICE</p>
+  <button class="admin-open" id="adminOpen">Администратор</button>
+</footer>
+
+<div class="modal" id="adminModal" hidden>
+  <div class="modal-content">
+    <button class="modal-close" id="adminClose">×</button>
+    <h2>Панель администратора</h2>
+    <form id="adminLoginForm">
+      <input type="password" id="adminPassword" placeholder="Пароль администратора" required>
+      <button class="button" type="submit">Войти</button>
+    </form>
+    <div id="adminRequests"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
